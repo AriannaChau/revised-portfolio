@@ -38,10 +38,11 @@
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+    opacity: 1;
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: .4;
 }
 
 .fa-facebook {
@@ -62,4 +63,9 @@
 .fa-github {
     background: #24292e;
     color: #28a946;
+}
+
+.fa-linkedin {
+    background: #0077b5;
+    color: white;
 }

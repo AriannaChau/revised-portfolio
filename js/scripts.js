@@ -10,7 +10,7 @@ $(document).ready(function(){
 
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 2400, function(){
+      }, 1800, function(){
         window.location.hash = hash;
       });
     }
