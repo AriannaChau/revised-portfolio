@@ -31,7 +31,42 @@ body, html {
       -ms-animation: fadein 5s;
       -o-animation: fadein 5s;
       animation: fadein 5s;
-    }
+  }
+}
+
+.nav a:before,
+.nav a:after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav a:before {
+    margin-right: 6px;
+    content: '{';
+    -webkit-transform: translate(6px);
+    -moz-transform: translate(6px);
+    transform: translate(6px);
+}
+
+.nav a:after {
+    margin-left: 6px;
+    content: '}';
+    -webkit-transform: translate(-6px);
+    -moz-transform: translate(-6px);
+    transform: translate(-6px);
+}
+
+.nav a:hover:before,
+.nav a:hover:after,
+.nav a:focus:before,
+.nav a:focus:after {
+    opacity: 1;
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    transform: translate(0px);
 }
 
 

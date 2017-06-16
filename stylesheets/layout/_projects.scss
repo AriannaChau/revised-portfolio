@@ -5,14 +5,14 @@
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: 160px;
-  background-image: url('../images/1.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .project-title {
   flex-basis: 100%;
+  padding-left: 50px;
+  font-family: $subtitle-font;
+  color: $cream;
+  text-shadow: 6px 2px 4px black;
 }
 
 
@@ -48,7 +48,7 @@
   z-index: 1;
   opacity: 1;
   padding: 10px 0 20px 5px;
-  background-color: #93c2d5;
+  background-color: $cream;
   width: 40%;
   -webkit-transform: translateX(150%);
   transform: translateX(150%);
@@ -66,7 +66,7 @@
   height: 0;
   border-style: solid;
   border-width: 120px 120px 120px 0;
-  border-color: transparent #93c2d5 transparent transparent;
+  border-color: transparent $cream transparent transparent;
 }
 
 //top transparent triangle//

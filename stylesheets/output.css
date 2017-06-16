@@ -421,6 +421,37 @@ body, html {
     -o-animation: fadein 5s;
     animation: fadein 5s; }
 
+.nav a:before,
+.nav a:after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s; }
+
+.nav a:before {
+  margin-right: 6px;
+  content: '{';
+  -webkit-transform: translate(6px);
+  -moz-transform: translate(6px);
+  transform: translate(6px); }
+
+.nav a:after {
+  margin-left: 6px;
+  content: '}';
+  -webkit-transform: translate(-6px);
+  -moz-transform: translate(-6px);
+  transform: translate(-6px); }
+
+.nav a:hover:before,
+.nav a:hover:after,
+.nav a:focus:before,
+.nav a:focus:after {
+  opacity: 1;
+  -webkit-transform: translate(0px);
+  -moz-transform: translate(0px);
+  transform: translate(0px); }
+
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -590,14 +621,14 @@ body, html {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 160px;
-  background-image: url("../images/1.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
+  padding-bottom: 160px; }
 
 .project-title {
-  flex-basis: 100%; }
+  flex-basis: 100%;
+  padding-left: 50px;
+  font-family: Playfair Display;
+  color: #d9b7bd;
+  text-shadow: 6px 2px 4px black; }
 
 .project-examples {
   position: relative;
@@ -628,7 +659,7 @@ body, html {
   z-index: 1;
   opacity: 1;
   padding: 10px 0 20px 5px;
-  background-color: #93c2d5;
+  background-color: #d9b7bd;
   width: 40%;
   -webkit-transform: translateX(150%);
   transform: translateX(150%); }
@@ -644,7 +675,7 @@ body, html {
   height: 0;
   border-style: solid;
   border-width: 120px 120px 120px 0;
-  border-color: transparent #93c2d5 transparent transparent; }
+  border-color: transparent #d9b7bd transparent transparent; }
 
 .project-examples:after {
   position: absolute;
@@ -697,6 +728,8 @@ body, html {
 
 .contactMe {
   flex-basis: 50%; }
+  .contactMe h1 {
+    font-family: Playfair Display; }
   .contactMe a {
     text-decoration: none;
     color: #d9b7bd; }

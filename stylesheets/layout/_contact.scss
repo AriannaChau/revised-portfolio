@@ -9,6 +9,9 @@
 
  .contactMe {
    flex-basis: 50%;
+   & h1 {
+     font-family: $subtitle-font;
+   }
    & a {
      text-decoration: none;
      color: $cream;
