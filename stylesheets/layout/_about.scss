@@ -6,6 +6,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.about-me {
+  border-radius: 40%;
+  padding: 50px;
+  background-color: rgba(0,0,0,.8);
+  color: $cream;
+  flex-basis: 40%;
+}
+
 .aboutMeGallery-outer{
   perspective: 1px;
   width: 100%;
@@ -55,12 +64,4 @@
   background: $cream;
   transform: translateZ(-4px) scale(5);
   box-shadow: 0 0 10px black;
-}
-
-.about-me {
-  border-radius: 40%;
-  padding: 50px;
-  background-color: rgba(0,0,0,.8);
-  color: $cream;
-  flex-basis: 40%;
 }

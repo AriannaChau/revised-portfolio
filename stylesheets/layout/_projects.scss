@@ -1,6 +1,106 @@
-#projects {
-  height: 100%;
-  width: 90%;
-  background-color: rgba(245,255,250,.8);
-  margin: 0 auto;
+#projects-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+}
+
+.project-examples {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  max-height: 220px;
+  width: 100%;
+  color: black;
+  text-align: right;
+  font-size: 14px;
+}
+
+.project-examples * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.project-examples img {
+  width: 100%;
+}
+
+.project-examples figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 1;
+  padding: 10px 0 20px 5px;
+  background-color: $cream;
+  width: 40%;
+  -webkit-transform: translateX(150%);
+  transform: translateX(150%);
+}
+
+//triangle for projects//
+.project-examples figcaption:before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 100%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 120px 120px 120px 0;
+  border-color: transparent $cream transparent transparent;
+}
+
+//top transparent triangle//
+.project-examples:after {
+  position: absolute;
+  bottom: 50%;
+  right: 40%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 120px 120px 0 120px;
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.project-examples h2,
+.project-examples p {
+  line-height: 1.5em;
+  -webkit-transform: translateX(-30px);
+  transform: translateX(-30px);
+  margin: 0;
+}
+
+.project-examples h2 {
+  line-height: 1.1em;
+}
+
+.project-examples a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.project-examples:hover:after,
+.project-examples.hover:after,
+.project-examples:hover figcaption,
+.project-examples.hover figcaption {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
 }
