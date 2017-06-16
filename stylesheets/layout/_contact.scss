@@ -1,6 +1,22 @@
 #contact {
-  height: 100%;
-  width: 90%;
-  background-color: rgba(245,215,250,.8);
+  width: 80%;
   margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .contactMe {
+   flex-basis: 50%;
+   & a {
+     text-decoration: none;
+     color: $cream;
+   }
+ }
+
+.social-buttons {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-around;
 }

@@ -8,7 +8,7 @@
     outline: none;
     background-color: $cream;
     color: black;
-    cursor: pointer; /* Add a mouse pointer on hover */
+    cursor: pointer;
     padding: 2px;
     border-radius: 5px;
     border: 1px solid black;
@@ -27,4 +27,39 @@
     -moz-transition:.9s;
     -webkit-transition:.9s;
     transition:.9s;
+}
+
+// social media buttons //
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background-image: linear-gradient(to top, #4b5ed6, #db2c77, #f7772b);
+    color: white;
+}
+
+.fa-github {
+    background: #24292e;
+    color: #28a946;
 }

@@ -585,7 +585,7 @@ body, html {
   transform: translateZ(-4px) scale(5);
   box-shadow: 0 0 10px black; }
 
-#projects-section {
+#projects {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -680,10 +680,23 @@ body, html {
   opacity: 1; }
 
 #contact {
-  height: 100%;
-  width: 90%;
-  background-color: rgba(245, 215, 250, 0.8);
-  margin: 0 auto; }
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.contactMe {
+  flex-basis: 50%; }
+  .contactMe a {
+    text-decoration: none;
+    color: #d9b7bd; }
+
+.social-buttons {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-around; }
 
 #scrollButton {
   display: none;
@@ -696,7 +709,6 @@ body, html {
   background-color: #d9b7bd;
   color: black;
   cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 2px;
   border-radius: 5px;
   border: 1px solid black; }
@@ -713,5 +725,32 @@ body, html {
   -moz-transition: .9s;
   -webkit-transition: .9s;
   transition: .9s; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%; }
+
+.fa:hover {
+  opacity: 0.7; }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white; }
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white; }
+
+.fa-instagram {
+  background-image: linear-gradient(to top, #4b5ed6, #db2c77, #f7772b);
+  color: white; }
+
+.fa-github {
+  background: #24292e;
+  color: #28a946; }
 
 /*# sourceMappingURL=output.css.map */
