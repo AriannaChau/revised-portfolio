@@ -395,7 +395,8 @@ body, html {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  font-family: Open Sans; }
 
 .header {
   height: 100%;
@@ -461,7 +462,7 @@ body, html {
   .nav li {
     list-style: none; }
     .nav li a {
-      color: white;
+      color: #d9b7bd;
       text-decoration: none; }
 
 @keyframes navbar {
@@ -520,10 +521,69 @@ body, html {
   100% {
     opacity: 1; } }
 #about {
-  height: 100%;
-  width: 90%;
-  background-color: rgba(225, 255, 250, 0.8);
+  height: 100vh;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.aboutMeGallery-outer {
+  perspective: 1px;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-basis: 50%; }
+
+.aboutMeGallery-inner {
+  position: relative;
+  margin: 0 auto;
+  width: 600px; }
+
+.picture {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 250px;
   margin: 0 auto; }
+
+.picture:nth-child(2) {
+  margin-top: 50vh;
+  margin-left: -4em;
+  z-index: 2;
+  transform: translateZ(-1px) scale(2); }
+
+.picture:nth-child(3) {
+  margin-top: -10%;
+  margin-left: 50%;
+  z-index: 0;
+  transform: translateZ(-6px) scale(7); }
+
+.picture:nth-child(4) {
+  margin-top: 25%;
+  margin-left: 100%;
+  z-index: 1;
+  transform: translateZ(-3px) scale(4); }
+
+.background-element {
+  margin: 0 auto;
+  margin-top: 200%;
+  width: 350px;
+  height: 500px;
+  background: #d9b7bd;
+  transform: translateZ(-4px) scale(5);
+  box-shadow: 0 0 10px black; }
+
+.about-me {
+  border-radius: 40%;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #d9b7bd;
+  flex-basis: 40%; }
 
 #projects {
   height: 100%;
@@ -545,8 +605,8 @@ body, html {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #c6e0a5;
-  color: #384d2e;
+  background-color: #d9b7bd;
+  color: black;
   cursor: pointer;
   /* Add a mouse pointer on hover */
   padding: 2px;
@@ -558,8 +618,8 @@ body, html {
   font-size: 25px; }
 
 #scrollButton:hover {
-  background-color: #384d2e;
-  color: #c6e0a5;
+  background-color: black;
+  color: #d9b7bd;
   -o-transition: .9s;
   -ms-transition: .9s;
   -moz-transition: .9s;

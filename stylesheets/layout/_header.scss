@@ -5,6 +5,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: $body-font;
 
 }
 
@@ -21,7 +22,7 @@ body, html {
       text-shadow: 6px 2px 4px black;
       font-size: 70px;
       text-align: center;
-      color: #d9b7bd;
+      color: $cream;
       margin: 0 auto;
       letter-spacing: .3em;
       margin-top: 25px;

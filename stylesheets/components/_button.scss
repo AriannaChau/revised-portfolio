@@ -6,8 +6,8 @@
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #c6e0a5;
-    color: #384d2e;
+    background-color: $cream;
+    color: black;
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 2px;
     border-radius: 5px;
@@ -20,8 +20,8 @@
 }
 
 #scrollButton:hover {
-    background-color: #384d2e;
-    color: #c6e0a5;
+    background-color: black;
+    color: $cream;
     -o-transition:.9s;
     -ms-transition:.9s;
     -moz-transition:.9s;
