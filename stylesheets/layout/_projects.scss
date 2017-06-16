@@ -1,9 +1,20 @@
 #projects {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 180px;
+  flex-wrap: wrap;
+  padding-bottom: 160px;
+  background-image: url('../images/1.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.project-title {
+  flex-basis: 100%;
+}
+
 
 .project-examples {
   position: relative;
@@ -37,7 +48,7 @@
   z-index: 1;
   opacity: 1;
   padding: 10px 0 20px 5px;
-  background-color: $cream;
+  background-color: #93c2d5;
   width: 40%;
   -webkit-transform: translateX(150%);
   transform: translateX(150%);
@@ -55,7 +66,7 @@
   height: 0;
   border-style: solid;
   border-width: 120px 120px 120px 0;
-  border-color: transparent $cream transparent transparent;
+  border-color: transparent #93c2d5 transparent transparent;
 }
 
 //top transparent triangle//

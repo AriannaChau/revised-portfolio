@@ -522,8 +522,7 @@ body, html {
     opacity: 1; } }
 #about {
   height: 100vh;
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -586,10 +585,19 @@ body, html {
   box-shadow: 0 0 10px black; }
 
 #projects {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 180px; }
+  flex-wrap: wrap;
+  padding-bottom: 160px;
+  background-image: url("../images/1.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.project-title {
+  flex-basis: 100%; }
 
 .project-examples {
   position: relative;
@@ -620,7 +628,7 @@ body, html {
   z-index: 1;
   opacity: 1;
   padding: 10px 0 20px 5px;
-  background-color: #d9b7bd;
+  background-color: #93c2d5;
   width: 40%;
   -webkit-transform: translateX(150%);
   transform: translateX(150%); }
@@ -636,7 +644,7 @@ body, html {
   height: 0;
   border-style: solid;
   border-width: 120px 120px 120px 0;
-  border-color: transparent #d9b7bd transparent transparent; }
+  border-color: transparent #93c2d5 transparent transparent; }
 
 .project-examples:after {
   position: absolute;
