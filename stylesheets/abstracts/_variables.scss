@@ -7,3 +7,8 @@ $blue: #93c2d5;
 $header-font: Cormorant Garamond;
 $body-font: Open Sans;
 $subtitle-font: Playfair Display;
+
+// media queries //
+
+$tablet-breakpoint: "only screen and (min-width: 600px)";
+$desktop-breakpoint: "only screen and (min-width: 992px)";

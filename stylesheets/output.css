@@ -566,7 +566,8 @@ body, html {
   border-radius: 40%;
   padding: 50px;
   color: #d9b7bd;
-  flex-basis: 40%; }
+  flex-basis: 40%;
+  flex-shrink: 1; }
 
 .aboutMeGallery-outer {
   perspective: 1px;
@@ -732,21 +733,22 @@ body, html {
   margin: 0 auto;
   margin-top: 100px;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center; }
+  flex-direction: column; }
 
-.contactMe {
-  flex-basis: 40%; }
-  .contactMe h1 {
-    font-family: Playfair Display; }
-  .contactMe a {
-    text-decoration: none;
-    color: #d9b7bd; }
+.contactMe h1 {
+  flex-basis: 50%;
+  color: #d9b7bd;
+  text-align: center;
+  font-family: Playfair Display;
+  text-shadow: 6px 2px 2px black; }
 
 .social-buttons {
-  flex-basis: 80%;
+  width: 40%;
   display: flex;
+  align-items: center;
   justify-content: space-around; }
 
 #scrollButton {

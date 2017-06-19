@@ -3,24 +3,24 @@
   margin: 0 auto;
   margin-top: 100px;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 }
 
- .contactMe {
-   flex-basis: 40%;
-   & h1 {
-     font-family: $subtitle-font;
-   }
-   & a {
-     text-decoration: none;
-     color: $cream;
-   }
+ .contactMe h1 {
+   flex-basis: 50%;
+   color: $cream;
+   text-align: center;
+   font-family: $subtitle-font;
+   text-shadow: 6px 2px 2px black;
  }
 
 .social-buttons {
-  flex-basis: 80%;
+  width: 40%;
   display: flex;
+  align-items: center;
   justify-content: space-around;
+
 }

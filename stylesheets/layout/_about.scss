@@ -15,6 +15,7 @@
   padding: 50px;
   color: $cream;
   flex-basis: 40%;
+  flex-shrink: 1;
 }
 
 .aboutMeGallery-outer{
@@ -25,6 +26,8 @@
   overflow-y: auto;
   flex-basis: 50%;
 }
+
+
 .aboutMeGallery-inner{
   position: relative;
   margin: 0 auto;
