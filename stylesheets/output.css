@@ -634,8 +634,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding-bottom: 160px; }
+  flex-wrap: wrap; }
 
 .project-title {
   flex-basis: 100%;
