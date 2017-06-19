@@ -554,28 +554,32 @@ body, html {
 #about {
   height: 100vh;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   background-image: url("../images/background2.jpg");
   background-repeat: repeat;
-  background-size: contain; }
+  background-size: contain;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 785px) {
+    #about {
+      flex-direction: column; } }
 
 .about-me {
+  flex-basis: 50%;
   border-radius: 40%;
   padding: 50px;
-  color: #d9b7bd;
-  flex-basis: 40%;
-  flex-shrink: 1; }
+  color: #d9b7bd; }
+  @media only screen and (max-width: 785px) {
+    .about-me {
+      border-radius: 0; } }
 
 .aboutMeGallery-outer {
   perspective: 1px;
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
-  flex-basis: 50%; }
+  overflow-y: auto; }
 
 .aboutMeGallery-inner {
   position: relative;
@@ -747,6 +751,7 @@ body, html {
 
 .social-buttons {
   width: 40%;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-around; }

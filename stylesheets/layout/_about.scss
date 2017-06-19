@@ -1,21 +1,26 @@
 #about {
   height: 100vh;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   background-image: url('../images/background2.jpg');
   background-repeat: repeat;
   background-size: contain;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  @include tablet-breakpoint {
+    flex-direction: column;
+  }
 }
 
 .about-me {
+  flex-basis: 50%;
   border-radius: 40%;
   padding: 50px;
   color: $cream;
-  flex-basis: 40%;
-  flex-shrink: 1;
+  @include tablet-breakpoint {
+    border-radius: 0;
+  }
 }
 
 .aboutMeGallery-outer{
@@ -24,7 +29,6 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  flex-basis: 50%;
 }
 
 

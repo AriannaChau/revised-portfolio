@@ -10,5 +10,5 @@ $subtitle-font: Playfair Display;
 
 // media queries //
 
-$tablet-breakpoint: "only screen and (min-width: 600px)";
-$desktop-breakpoint: "only screen and (min-width: 992px)";
+$tablet-breakpoint: "only screen and (max-width: 785px)";
+$desktop-breakpoint: "only screen and (max-width: 1003px)";
