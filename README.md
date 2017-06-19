@@ -6,7 +6,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This is a personal portfolio showcasing my programming abilities thus far with CSS and Javascript.
 
 ## Setup/Installation Requirements
 
@@ -20,7 +20,7 @@ If you need to contact me for questions or concerns, my email is ariannapikachau
 
 ## Link to Site
 
- ariannachau.github.io/revised-portfolio/
+ https://ariannachau.github.io/revised-portfolio/
 
 ### License
 
